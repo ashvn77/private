@@ -1,0 +1,269 @@
+*{
+    margin: 0 ;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+ul{
+    list-style: none;
+}
+.active{
+    color: #bb0a31;
+    text-decoration: underline;
+}
+body,html{
+    overflow-x: hidden;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: #ffffff;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+
+}
+.nav-link li a{
+    color: #ffffff;
+}
+.nav-link li{
+    margin: 0 30px;
+}
+
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./img/mount.jpg');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+a{
+    text-decoration: none  ;
+
+}
+.header-cont{
+    margin-bottom: 150px;
+    color: #ffffff;
+    text-align: center;
+}
+.header-cont h2{
+    font-size: 4vmin;
+
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background: #eb375e;
+    margin: 10px auto;
+    border-radius: 5px;
+
+}
+.header-cont h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+}
+.btn{
+    padding: 8px 20px;
+    background: #eb375e;
+    border-radius: 30px;
+    color:#ffffff;
+    
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 27px;
+    cursor: pointer;
+}
+.menu-btn{
+    display: none;
+}
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: #28216d;
+}
+.row{
+    display:flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row .col img{
+    width: 80%;
+
+}
+.event .row{
+    margin-top: 50px;
+}
+h4{
+    font-size: 3vmin;
+    color: #21199e;
+    margin: 20px auto;
+}
+ p{
+    color: #28216d;
+    padding: 0px 40px;
+}
+.event .btn{
+    margin-top: 30px;
+}
+.explor{
+    width: 100%;
+    height: 120vh;
+    background-image: url('./img/explor.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+
+}
+.contnt-explor{
+    width: 80%;
+    padding: 50px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contnt-explor h1{
+    font-size: 10vmin;
+}
+.contnt-explor .line{
+    margin-bottom: 50px;
+}
+.contnt-explor p{
+    color: #ffffff;
+}
+.contnt-explor .btn{
+    margin-top: 30px;
+}
+.cont-col{
+    width: 40%;
+}
+.img-col{
+    width: 60%;
+}
+.tour .img-gal{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+.img-gal img{
+    max-width: 300px;
+    margin: 10px;
+}
+.cont-col h1{
+    font-size: 7vmin;
+    color: #28216d;
+}
+.cont-col .line{
+    margin-left: -1px;
+}
+.cont-col p{
+    padding: 0;
+    margin: 30px auto;
+}
+.cont-col .btn{
+    margin-left: -100px;
+}
+.footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #4c3eb3;
+    text-align: center;
+
+}
+.footer p{
+    color: #ffffff;
+    margin: 20px auto;
+}
+@media only screen and (max-width:850px) {
+    .navbar{
+        padding: 0;
+
+    }
+    .menu-btn{
+        display:block;
+    }
+
+
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-link{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #5c5daaf6;
+        margin-top: -900px;
+        transition: all 0.3s ease;
+
+    }
+    .mob-menu{
+        margin-top: 0px;
+    }
+    .nav-link li{
+        margin: 30px auto;;
+    }
+    /*Events*/
+.row{
+    flex-direction: column;
+}
+.row .col{
+    margin: 20px auto;
+}
+.col img{
+    max-width: 90%;
+}
+
+/*explore*/
+
+.contnt-explor{
+    width: 100%;
+}
+.tour .col{
+    width: 100%;
+}
+.img-gal{
+    align-items: center;
+    justify-content: center;
+}
+.img-gal img{
+    width: 90%;
+}
+.footer{
+    padding: 10px;
+}
+}
+

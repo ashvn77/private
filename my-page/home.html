@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">ADVENTURE</h1>
+
+        <ul class="nav-link">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Tours</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">About</a></li>
+            <li class="btn"><a href="#">contact</a></li>
+        </ul>
+        <img src="./img/menu.svg" alt="" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-cont">
+            <h2>Explore</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL WORLD</h1>
+            <a href="#" class="btn">preview</a>
+        </div>
+    </header>
+    <section class="event">
+        <div class="title">
+            <h1>UPCOMING EVENTS</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./img/everest.jpg" class="imga" alt="">
+                <h4>Everest camp trek</h4>
+                <p>hike,travel,ice, cold,everesrt</p><br>
+                <a href="#" class="btn">Learn more</a>
+            </div>
+            <div class="col">
+                <img src="./img/trek.jpg" class="imga" alt="">
+                <h4>Walking Holidays</h4>
+                <p>hike,travel,ice, cold,everesrt</p><br>
+                <a href="#" class="btn">Learn more</a>
+            </div>
+        </div>
+    </section>
+    <section class="explor">
+        <div class="contnt-explor">
+            <h1>EXPLORE THE WORLD</h1>
+            <div class="line"></div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad quia in distinctio! Adipisci aspernatur mollitia nisi repudiandae laborum dolorum reprehenderit magni autem quidem corrupti tempora ut, earum officiis pariatur ratione!</p><br>
+        <a href="#" class="btn">Learn more</a>  
+        </div>
+    </section>
+    <section class="tour">
+        <div class="row">
+            <div class="col cont-col">
+                <h1>UPCOMIG TOURS &DESTINATION</h1>
+                <div class="line"></div>
+                <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, animi deserunt! Illum saepe repellat amet iusto incidunt earum delectus, impedit, voluptatem dolor laborum recusandae architecto. Nostrum, dicta sit. Perferendis, voluptatem.</P><br>
+                <a href="#" class="btn">Learn more</a>
+            </div>
+            <div class="col img-col">
+                <div class="img-gal">
+                    <img src="./img/img1.jpg" alt="" srcset="">
+                    <img src="./img/img2.jpg" alt="" srcset="">
+                    <img src="./img/img3.jpg" alt="" srcset="">
+                    <img src="./img/img4.jpg" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <p>123 Fifth Avenue,NY 176234,New York,USA | phone: 777-875-753  | Email: contact@gmail.com</p><br>
+        <p>Copyright  2022 outdoor Avenue</p>
+    </section>
+    <script>
+        const menubtn=document.querySelector('.menu-btn');
+        const navlink=document.querySelector('.nav-link');
+        menubtn.addEventListener('click',()=>{
+            navlink.classlist.toggle('mob-menu')
+        })
+    </script>
+</body>
+</html>
